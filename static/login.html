@@ -1,24 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login_Page</title>
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<title>RoomRental.com</title>
+
+
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:400,300">
 </head>
 <body>
-	<div class="logo">
-        <img src="img/logo.png">
-    </div>
-	<div class="login-page">
-	
-	<div class="form">
-		<form class="login-form">
-			<input type="text" placeholder="user name">
-			<input type="text" placeholder="password">
-			<button>Login</button>
-			<p class="message">Not Registered? <a href="register.html">Register</a></p>
-		</form>
+<div id="container">
+	<div id="header">
+	<h1>Room Rental</h1>
 	</div>
-	</div>
+	<div id="content">
+		<div id="nav">
+		<h3>Navigation</h3>
+		<ul>
+			<li><a class="selected" href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Contact Us</a></li>
+		</ul>	
+		</div>
+		<div id="main">
+			<h2>Join for Free !</h2>
+			<h3 class="select" >Sign up now and find your
+			Perfect Room today...</h3>
+			<form action="" method="GET">
+				<fieldset>
+					<legend><span class="section">1</span>Your Basic Info</legend>
+				<label for="name" class="">Name:</label>
+				<input type="text" name="name" value="">
+				<br>
+				<label for="email" class="">Email:</label>
+				<input type="email" name="email" value="">
+				<br>
+				<label for="password" class="">Password:</label>
+				<input type="password" name="password" value="">
+				<br>
+				<label >Age:</label>
+				<input type="radio" name="age" value="under_18">
+				<label class="light" for="under_18">Under 18</label>
 
+				<input type="radio" name="age" value="over_18">
+				<label class="light" for="over_18">Over 18</label>
+				</fieldset>
+
+				<fieldset>
+					<legend><span class="section">2</span>Your Profile</legend>
+					<label class="" for="bio">Bio:</label>
+					<br>
+					<textarea name="bio"></textarea>
+					<br>
+					<label for="area">Area Interested In:</label>
+					<select name="area">
+						<optgroup label="1">
+							<option value="area1">area1</option>
+							<option value="area2">area2</option>
+							<option value="area3">area3</option>
+							<option value="area4">area4</option>
+							<option value="area5">area5</option>
+						</optgroup>
+						<optgroup label="2">
+							<option value="area6">area6</option>
+							<option value="area7">area7</option>
+							<option value="area8">area8</option>
+							<option value="area9">area9</option>
+							<option value="area10">area10</option>
+						</optgroup>
+						<optgroup label="3">
+							<option value="area11">area11</option>
+							<option value="area12">area12</option>
+							<option value="area13">area13</option>
+						</optgroup>
+					</select>
+					<br>
+					<label>Gender : </label>
+
+					<input type="radio" value="male" name="gender">
+					<label class="light" for="male">Male</label>
+
+					<input type="radio" value="female" name="gender">
+					<label class="light" for="female">Female</label>
+
+
+
+				</fieldset>
+				<button type="submit">Sign Up</button>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+	Copyright &copy; 2020 RoomRental.com
+	</div>
+</div>
 </body>
 </html>
