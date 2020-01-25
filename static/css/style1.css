@@ -1,14 +1,13 @@
-
 *{
     margin: 0;
     padding: 0;
     font-family: Times New Roman;
 }
 header{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/house3.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/house2.jpg);
 	height: 100vh;
 	background-size: cover;
-	background-position: center; 
+	background-position: center;
 }
 ul
 {
@@ -21,7 +20,7 @@ ul li{
 }
 ul li a{
 	text-decoration: none;
-	color: #fff;
+	color: #ffffff;
 	padding: 5px 20px;
 	border: 1px solid transparent; 
 	transition: 0.6s ease;
@@ -31,10 +30,7 @@ ul li a:hover{
 	background-color: #fff;
 	color: #000;
 }
-ul li.active a{
-	background-color: #fff;
-	color: #000;
-}
+
 .logo img{
 	float: left;
 	width: 150px;
@@ -47,40 +43,20 @@ ul li.active a{
 .title
 {
 	position: absolute;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
 .title h1
 {
-	color: #f20;
+	color: #ffffff;
 	font-size: 70px;
-}
-
-.title h3
-{
-	color: #fff;
-	font-size: 40px;
 }
 .title h5
 {
-	color: #fff;
-	font-size: 25px;
+	color: #ffffff;
+	font-size: 20px;
 }
-.button{
-	position: absolute;
-	top: 75%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-.btn{
-	border: 1px solid #fff;
-	padding: 10px 30px;
-	color: #fff;
-	text-decoration: none;
-	transition: 0.6s ease;
-}
-.btn:hover{
-	background-color: #fff;
-	color: #000;
-}
+
+
+
