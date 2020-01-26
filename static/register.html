@@ -26,35 +26,62 @@
             <option value="student">Student</option>
             <option value="landlord">Landlord</option>
           </select>
-          <input type="text" id="name" onblur="validatename()" placeholder="Name" />
-          <label id="lblname" style="color:blue ;visibility: hidden"
+          <input
+            type="text"
+            id="name"
+            onblur="validatename()"
+            placeholder="Name"
+          />
+          <label id="lblname" style="color:red ;visibility: hidden"
             >Invalid Name</label
           >
-          <input type="email" id="email" onblur="validatemail()" placeholder="Email" />
-          <label id="lblemail" style="color:blue ;visibility: hidden"
+          <input
+            type="email"
+            id="email"
+            onblur="validatemail()"
+            placeholder="Email"
+          />
+          <label id="lblemail" style="color:red ;visibility: hidden"
             >Invalid Email</label
           >
           <input type="date" placeholdere="Dob" required />
 
-          <input type="tel" id="mob" onblur="validatemobile()"placeholder="Contact no." />
-          <label id="lblmob" style="color:blue ;visibility: hidden"
+          <input
+            type="tel"
+            id="mob"
+            onblur="validatemobile()"
+            placeholder="Contact no."
+          />
+          <label id="lblmob" style="color:red ;visibility: hidden"
             >Invalid Mobile No</label
           >
-          <input type="password" id="pass" onblur="validatepass()" placeholder="Create password" />
-          <label id="lblpass" style="color:blue ;visibility: hidden"
+          <input
+            type="password"
+            id="pass"
+            onblur="validatepass()"
+            placeholder="Create password"
+          />
+          <label id="lblpass" style="color:red ;visibility: hidden"
             >Invalid password</label
           >
-          <input type="password" id="rpass" onblur="validatepass()" placeholder="Re-enter password" />
-          <label id="lblrpass" style="color:blue ;visibility: hidden"
+          <input
+            type="password"
+            id="rpass"
+            onblur="validatepass()"
+            placeholder="Re-enter password"
+          />
+          <label id="lblrpass" style="color:red ;visibility: hidden"
             >Password do not match</label
           >
-          
+
           <select id="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
           </select>
-          <button type="submit" onclick="return validate()"value="submit" >Sign up</button>
+          <button type="submit" onclick="return validate()" value="submit">
+            Sign up
+          </button>
         </form>
       </div>
     </div>
