@@ -22,6 +22,10 @@
           action="Index.html"
         >
           <h3><p>REGISTRATION</p></h3>
+          <select id="user">
+            <option value="student">Student</option>
+            <option value="landlord">Landlord</option>
+          </select>
           <input type="text" id="name" onblur="validatename()" placeholder="Name" />
           <label id="lblname" style="color:blue ;visibility: hidden"
             >Invalid Name</label
@@ -30,8 +34,7 @@
           <label id="lblemail" style="color:blue ;visibility: hidden"
             >Invalid Email</label
           >
-          <label>DOB</label>
-          <input type="date" required />
+          <input type="date" placeholdere="Dob" required />
 
           <input type="tel" id="mob" onblur="validatemobile()"placeholder="Contact no." />
           <label id="lblmob" style="color:blue ;visibility: hidden"
@@ -45,7 +48,7 @@
           <label id="lblrpass" style="color:blue ;visibility: hidden"
             >Password do not match</label
           >
-          <label>Gender</label>
+          
           <select id="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
