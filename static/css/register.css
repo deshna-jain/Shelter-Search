@@ -1,6 +1,6 @@
 body{
 	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/login.jpg);
-	height: 100vh;
+	
 	background-size: cover;
 	background-position: center;
 }
@@ -15,9 +15,9 @@ body{
 .form{
 	position: relative;
  left: 0; top: 0;  overflow: auto;	z-index: 1;
-	background: rgba(255,  0,  0,  0.8);
+	background: rgba(255, 0 , 0 ,  0.8);
 	max-width: 360px;
-	margin: 0 auto 100px;
+	margin: 0 auto 50px;
 	padding: 45px;
 	text-align: center;
 
@@ -37,7 +37,7 @@ font-size: 20px
 	width: 100%;
 	border: 0;
 	margin: 0 0 15px;
-	padding: 15px;
+	padding: 10px;
 	box-sizing: border-box;
 	font-size: 14px;
 
