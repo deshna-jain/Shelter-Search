@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration_page</title>
+
+    <link rel="stylesheet" type="text/css" href="css/register.css" />
+
+    <script type="text/javascript" src="js/register.js"></script>
+  </head>
+
+  <body>
+    <div class="logo">
+      <img src="img/logo.png" />
+    </div>
+
+    <div class="login-page">
+      <div id="myform" class="form">
+        <form
+          name="val_form"
+          class="register-form"
+          method="post"
+          action="register.jsp"
+        >
+          <h3>REGISTRATION</h3>
+          <select id="user" name="user">
+            <option value="student">student</option>
+            <option value="landlord">landlord</option>
+          </select>
+          
+          <input type="text" id="name" onblur="validatename()" placeholder="Name"  name="name"/>
+          <label id="lblname" style="color:blue ;visibility: hidden">Invalid Name</label>
+          
+          <input type="email" id="email" onblur="validatemail()" placeholder="Email" name="email" />
+          <label id="lblemail" style="color:blue ;visibility: hidden">Invalid Email</label>
+          
+          <input type="date" placeholder="Dob" required name="dob"/>
+
+          <input type="tel" id="mob" onblur="validatemobile()" placeholder="Contact no." name="mobilenum" />
+          <label id="lblmob" style="color:blue ;visibility: hidden">Invalid Mobile No</label>
+          
+          <input type="password" id="pass" onblur="validatepass()" placeholder="Create password" />
+          <label id="lblpass" style="color:blue ;visibility: hidden">Invalid password</label>
+          
+          <input type="password" id="rpass" onblur="validatepass()" placeholder="Re-enter password" name="password" />
+          <label id="lblrpass" style="color:blue ;visibility: hidden">Password do not match</label>
+          
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <button type="submit" onclick="return validate()" value="submit" >Sign up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
